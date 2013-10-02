@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/levelIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_menu_battery"
+        android:contentDescription="@string/menu_battery_level" />
+
+    <TextView
+        android:id="@+id/labelBatteryLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/levelIcon"
+        android:layout_marginBottom="14dp"
+        android:layout_toRightOf="@+id/levelIcon"
+        android:contentDescription="@string/menu_battery_level"
+        android:text="@string/menu_battery_level"
+        tools:context=".MainActivity" />
+
+
+    <ImageView
+        android:id="@+id/chargerIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/levelIcon"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/ic_menu_charge"
+        android:contentDescription="@string/menu_charger_type" />
+
+    <TextView
+        android:id="@+id/labelBatteryCharger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chargerIcon"
+        android:layout_marginBottom="14dp"
+        android:layout_toRightOf="@+id/chargerIcon"
+        android:text="@string/menu_charger_type" />
+
+    <TextView
+        android:id="@+id/percent_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/labelBatteryLevel"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/labelBatteryCharger"
+        android:text="@string/percent_level_battery"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/charger_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/percent_level"
+        android:layout_alignTop="@+id/labelBatteryCharger"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
