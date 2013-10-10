@@ -1,0 +1,73 @@
+package com.dam.pmdm.filechooserintent;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+
+	private Button btnSelectFile;
+	private RadioButton opcionImagen, opcionVideo, opcionFichero;
+	private static int PICKFILE_RESULT_CODE = 1;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        btnSelectFile = (Button) findViewById(R.id.buttonSelectFile);
+        opcionImagen = (RadioButton) findViewById(R.id.opcionImagen);
+        opcionVideo = (RadioButton) findViewById(R.id.opcionVideo);
+        opcionFichero = (RadioButton) findViewById(R.id.opcionFichero);
+        
+        btnSelectFile.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+				if(opcionFichero.isChecked()) {
+					intent.setType("file/*");
+				} else if(opcionImagen.isChecked()) {
+					intent.setType("image/*");
+				} else if(opcionVideo.isChecked()) {
+					intent.setType("video/*");
+				}
+			    startActivityForResult(intent,PICKFILE_RESULT_CODE);
+				
+			}
+		});
+    }
+    
+    
+
+
+    @Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		if(requestCode==PICKFILE_RESULT_CODE) {
+			if(resultCode==RESULT_OK) {
+				String fichero = data.getData().getPath();
+				
+				Toast toast = Toast.makeText(getApplicationContext(), "Selecciona el fichero: "+fichero, Toast.LENGTH_SHORT);
+				toast.show();
+			} else {
+				
+			}
+		}
+	}
+
+
+
+
+	@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+}
