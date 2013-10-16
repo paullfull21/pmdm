@@ -1,0 +1,34 @@
+package com.pmdm.consultaalumno;
+
+import java.util.ArrayList;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+public class ConsultaAlumno extends Activity {
+	
+	private ArrayList<String> alumnos;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		alumnos = new ArrayList<String>();
+		alumnos.add("Pepe PŽrez");
+		alumnos.add("Mar’a Garc’a");
+		
+		Bundle datos =  getIntent().getExtras();
+		String numeroAlumno = datos.getString("numAlumno");
+		int posicion = Integer.parseInt(numeroAlumno);
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.consulta_alumno, menu);
+		return true;
+	}
+
+}

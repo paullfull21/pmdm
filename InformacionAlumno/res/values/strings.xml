@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Consulta Alumno∫</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="boton_consulta">Consultar nombre/apellidos</string>
+    <string name="boton_consulta_dir">Consultar dirección</string>
+    <string name="title_activity_sumador">Consulta Alumnos</string>
+    <string name="numero_alumno">Nº matrícula alumno</string>
+
+</resources>

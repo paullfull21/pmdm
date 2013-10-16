@@ -3,9 +3,17 @@
 <fullyQualifiedTypeName name="com.dam.pmdm.realizarllamada.R.id"/>
 <fullyQualifiedTypeName name="android.content.Intent"/>
 <fullyQualifiedTypeName name="android.net.Uri"/>
-<fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="com.dam.pmdm.resultadosuma.R.id"/>
 <fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="com.dam.pmdm.filechooserintent.MainActivity"/>
+<fullyQualifiedTypeName name="com.dam.pmdm.filechooserintent.R.id"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.pmdm.consultaalumno.R.id"/>
 <fullyQualifiedTypeName name="android.widget.EditText"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.pmdm.consultaalumno.ConsultaAlumno"/>
+<fullyQualifiedTypeName name="com.pmdm.consultaalumno.MainActivity"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
 </qualifiedTypeNameHistroy>
