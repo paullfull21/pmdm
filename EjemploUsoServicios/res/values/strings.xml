@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Reproductor Simple</string>
+    <string name="start_music_service">Iniciar servicio de música</string>
+    <string name="stop_user_service">Detener servicio de música</string>
+</resources>
