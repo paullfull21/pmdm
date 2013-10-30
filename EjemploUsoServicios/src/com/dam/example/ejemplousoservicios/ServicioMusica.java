@@ -4,6 +4,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
+import android.widget.Toast;
 
 public class ServicioMusica extends Service {
     MediaPlayer reproductor;
@@ -23,10 +24,29 @@ public class ServicioMusica extends Service {
 		reproductor.stop();
 	}
 
+	/*
+	 * El método onStart es utilizado si trabajamos con
+	 * versiones inferiores a la 2.0
+	 * 
 	@Override
 	public void onStart(Intent intent, int startId) {
 		reproductor.start();
-	}	
+	}
+	*/
+	
+	/*
+	 * El método onStartCommand se definió a partir de la API 5
+	 * @see android.app.Service#onStartCommand(android.content.Intent, int, int)
+	 */
+	
+	@Override
+    public int onStartCommand(Intent intent, int flags, int idArranque) {
+          Toast.makeText(this,"Servicio arrancado "+ idArranque,Toast.LENGTH_SHORT).show();
+          reproductor.start();
+          return START_STICKY;
+    }
+	
+	
 	
 	
 	

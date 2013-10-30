@@ -16,4 +16,8 @@
 <fullyQualifiedTypeName name="com.pmdm.consultaalumno.MainActivity"/>
 <fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.media.MediaPlayer"/>
+<fullyQualifiedTypeName name="android.support.v4.app.TaskStackBuilder"/>
+<fullyQualifiedTypeName name="com.dam.example.ejemplousoservicios.ControlServicioActivity"/>
+<fullyQualifiedTypeName name="android.graphics.Color"/>
 </qualifiedTypeNameHistroy>
