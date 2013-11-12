@@ -1,0 +1,16 @@
+package com.dam.pmdm.ejemploreceptoranuncios;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.widget.Toast;
+
+public class AudioReceiver extends BroadcastReceiver {
+	public AudioReceiver() {
+	}
+
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		Toast.makeText(context, "Auriculares conectados/desconectados", Toast.LENGTH_LONG);
+	}
+}
