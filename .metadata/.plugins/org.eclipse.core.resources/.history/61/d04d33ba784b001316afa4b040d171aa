@@ -29,6 +29,14 @@
             android:label="@string/title_activity_main" >
         </activity>
 
+        <receiver
+            android:name="com.dam.pmdm.ejemploreceptoranuncios.AudioReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_HEADSET_PLUG" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
