@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;assetManager&apos; in &apos;com.dam.soundpoolinstrumentos.SoundPoolInstrumentosActivity.onCreate(...)&apos; to &apos;manager&apos;&#x0A;- Original project: &apos;SoundPoolExamples&apos;&#x0A;- Original element: &apos;com.dam.soundpoolinstrumentos.SoundPoolInstrumentosActivity.onCreate(Bundle).assetManager&apos;&#x0A;- Renamed element: &apos;assetManager&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;assetManager&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.dam.soundpoolinstrumentos{SoundPoolInstrumentosActivity.java[SoundPoolInstrumentosActivity~onCreate~QBundle;@assetManager!815!854!828!839!QAssetManager;!0!false" name="manager" references="true" stamp="1384949782056" version="1.0"/>
+</session>
