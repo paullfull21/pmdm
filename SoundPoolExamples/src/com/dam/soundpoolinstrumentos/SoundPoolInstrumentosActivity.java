@@ -39,11 +39,12 @@ public class SoundPoolInstrumentosActivity extends Activity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		
+		/*
 		bA.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
-				sP.play(miAudioA, 1.0f, 1.0f, 1, 0, 1);
+				sP.play(miAudioA, 1.0f, 1.0f, 1, 0, 0.5f);
 
 			}
 		});
@@ -55,8 +56,19 @@ public class SoundPoolInstrumentosActivity extends Activity {
 
 			}
 		});
+		*/
+		
 
 	}
+	
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		sP.play(miAudioA, 1.0f, 1.0f, 1, 0, 0.5f);
+	}
+
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
