@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+/Users/miguelcampos/Documents/SALESIANOS/2013-2014/M—dulos/PMDM/workspace/06 Camera/.metadata/.plugins/org.eclipse.jdt.core
+4085641506.index
+1682936626.index
+1398812415.index
