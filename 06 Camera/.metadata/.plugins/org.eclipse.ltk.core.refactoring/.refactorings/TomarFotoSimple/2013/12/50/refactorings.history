@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;TAKE_PHOTO_CODE&apos; in &apos;com.dam.pmdm.tomarfotosimple.MainActivity&apos; to &apos;TESTIGO_TOMAR_FOTO&apos;&#x0A;- Original project: &apos;TomarFotoSimple&apos;&#x0A;- Original element: &apos;com.dam.pmdm.tomarfotosimple.MainActivity.TAKE_PHOTO_CODE&apos;&#x0A;- Renamed element: &apos;com.dam.pmdm.tomarfotosimple.MainActivity.TESTIGO_TOMAR_FOTO&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;TAKE_PHOTO_CODE&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;com.dam.pmdm.tomarfotosimple{MainActivity.java[MainActivity^TAKE_PHOTO_CODE" name="TESTIGO_TOMAR_FOTO" references="true" setter="false" stamp="1386713654100" textual="false" version="1.0"/>
+</session>
