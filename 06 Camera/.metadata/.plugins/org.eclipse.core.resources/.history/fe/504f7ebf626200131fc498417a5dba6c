@@ -66,7 +66,7 @@ public class MainActivity extends Activity {
 			File imgFile = new File(
 					Environment
 							.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
-							+ "/fotosDAM/" + count + ".jpg");
+							+ "/fotoDAM/" + count + ".jpg");
 			if (imgFile.exists()) {
 
 				Bitmap myBitmap = BitmapFactory.decodeFile(imgFile
