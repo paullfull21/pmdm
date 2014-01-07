@@ -1,0 +1,96 @@
+package com.dam.pmdm.customcamera;
+
+import java.io.IOException;
+
+import android.app.Activity;
+import android.content.pm.ActivityInfo;
+import android.graphics.PixelFormat;
+import android.hardware.Camera;
+import android.os.Bundle;
+import android.view.Surface;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+import android.widget.Button;
+
+public class MainActivity extends Activity implements SurfaceHolder.Callback {
+	Button btnCamara;
+	SurfaceView surface;
+	boolean isPreview = false;
+	Camera camara;
+	SurfaceHolder gestorSurface;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+
+		// Configuraci—n Ventana
+		getWindow().setFormat(PixelFormat.TRANSLUCENT);
+
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+		surface = (SurfaceView) findViewById(R.id.surfaceView);
+		gestorSurface = surface.getHolder();
+		gestorSurface.addCallback(this);
+
+	}
+
+	@Override
+	public void surfaceChanged(SurfaceHolder holder, int format, int width,
+			int height) {
+		camara.startPreview();
+
+	}
+
+	@Override
+	public void surfaceCreated(SurfaceHolder holder) {
+		camara = Camera.open();
+
+		try {
+			android.hardware.Camera.CameraInfo info = new android.hardware.Camera.CameraInfo();
+
+			int rotation = getWindowManager().getDefaultDisplay().getRotation();
+			int degrees = 0;
+
+			switch (rotation) {
+			case surfa.ROTATION_0:
+				degrees = 0;
+				break;
+			case Surface.ROTATION_90:
+				degrees = 90;
+				break;
+			case Surface.ROTATION_180:
+				degrees = 180;
+				break;
+			case Surface.ROTATION_270:
+				degrees = 270;
+				break;
+			}
+
+			int result;
+			if (info.facing == Camera.CameraInfo.CAMERA_FACING_FRONT) {
+				result = (info.orientation + degrees) % 360;
+				result = (360 - result) % 360; // compensate the mirror
+			} else { // back-facing
+				result = (info.orientation - degrees + 360) % 360;
+			}
+
+			camara.setPreviewDisplay(gestorSurface);
+			camara.setDisplayOrientation(result);
+
+		} catch (IOException exception) {
+			camara.release();
+			camara = null;
+		}
+
+	}
+
+	@Override
+	public void surfaceDestroyed(SurfaceHolder holder) {
+		camara.stopPreview();
+		camara.release();
+		camara = null;
+
+	}
+
+}
