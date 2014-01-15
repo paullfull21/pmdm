@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;mSensorTemperatura&apos; in &apos;com.dam.sensoresexamples.SensoresActivity&apos; to &apos;mSensorLight&apos;&#x0A;- Original project: &apos;SensorAcelerometro&apos;&#x0A;- Original element: &apos;com.dam.sensoresexamples.SensoresActivity.mSensorTemperatura&apos;&#x0A;- Renamed element: &apos;com.dam.sensoresexamples.SensoresActivity.mSensorLight&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;mSensorTemperatura&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;com.dam.sensoresexamples{SensoresActivity.java[SensoresActivity^mSensorTemperatura" name="mSensorLight" references="true" setter="false" stamp="1389788051919" textual="false" version="1.0"/>
+</session>
