@@ -7,4 +7,6 @@
 <fullyQualifiedTypeName name="com.google.android.gms.maps.model.Marker"/>
 <fullyQualifiedTypeName name="com.google.android.gms.maps.model.BitmapDescriptorFactory"/>
 <fullyQualifiedTypeName name="com.google.android.gms.maps.CameraUpdateFactory"/>
+<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
+<fullyQualifiedTypeName name="android.app.Fragment"/>
 </qualifiedTypeNameHistroy>

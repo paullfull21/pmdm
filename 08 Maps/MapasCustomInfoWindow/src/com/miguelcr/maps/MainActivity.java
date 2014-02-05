@@ -20,6 +20,7 @@ public class MainActivity extends FragmentActivity {
 	
 	private GoogleMap mMap;
 	static final LatLng SALESIANOS_TRIANA = new LatLng(37.380346, -6.007743);
+	static final LatLng CALLE_SAN_JACINTO = new LatLng(37.380346, -6.007743);
 
 
 	@Override
@@ -48,6 +49,13 @@ public class MainActivity extends FragmentActivity {
 		mMap.addMarker(new MarkerOptions()
         .position(SALESIANOS_TRIANA)
         .title("Salesianos Triana")
+        .snippet(city)
+        .draggable(true)
+        .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_launcher)));
+		
+		mMap.addMarker(new MarkerOptions()
+        .position(CALLE_SAN_JACINTO)
+        .title("Calle San Jacinto")
         .snippet(city)
         .draggable(true)
         .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_launcher)));
