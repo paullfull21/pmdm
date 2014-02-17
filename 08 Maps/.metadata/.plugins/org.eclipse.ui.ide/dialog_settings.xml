@@ -5,6 +5,8 @@
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/miguelcampos/Documents/SALESIANOS/2013-2014/Módulos/PMDM/Recursos/GoogleMaps"/>
+			<item value="/Users/miguelcampos/Documents/SALESIANOS/2012-2013/Módulos/PMDM/workspace/Mapas_Polygons_v2"/>
 			<item value="/Users/miguelcampos/Documents/SALESIANOS/2013-2014/Módulos/DI/workspace/08 Navigation/NavigationDrawerRight"/>
 			<item value="/Users/miguelcampos/Documents/SALESIANOS/2012-2013/Módulos/PMDM/workspace/Mapas_Markers_Events"/>
 		</list>
